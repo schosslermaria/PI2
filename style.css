@@ -1,0 +1,103 @@
+/* 🌿 Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: #DAD7C1;  /* Bege claro */
+    color: #3F4823;  /* Verde escuro acinzentado */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.modo-tema {
+    text-align: right;
+    padding: 10px;
+}
+
+#toggle-tema {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #B86F52;  /* Marrom avermelhado */
+    color: white;
+}
+
+header {
+    background: #79863C;  /* Verde musgo */
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background: #A4AD6C;  /* Verde oliva claro */
+    padding: 10px;
+}
+
+nav input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #79863C;  /* Verde musgo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: #6B5B3D;  /* Marrom terra */
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#conteudo {
+    padding: 20px;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planta {
+    background: #E6D3C0;  /* Bege terroso */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.planta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.planta:hover {
+    transform: scale(1.05);
+}
+
+/* 🌙 Modo Escuro */
+.dark-mode {
+    background: #3F3B2A;  /* Marrom escuro acinzentado */
+    color: white;
+}
+
+.dark-mode header, .dark-mode nav {
+    background: #574D33;  /* Marrom escuro */
+}
+
+.dark-mode .planta {
+    background: #6B5B3D;  /* Marrom terra */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Cultivo de Plantas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guia Completo de Cultivo de Plantas</h1>
+        <p>Aprenda a cultivar e cuidar das suas plantas favoritas!</p>
+    </header>
+
+    <div class="modo-tema">
+        <button id="toggle-tema">Modo Claro/Escuro</button>
+    </div>
+
+    <nav>
+        <input type="text" id="busca" placeholder="🔍 Pesquisar planta..." onkeyup="buscarPlanta()">
+        <ul>
+            <li><a href="#" onclick="mostrarCategoria('tempo')"> Tempo de Crescimento</a></li>
+            <li><a href="#" onclick="mostrarCategoria('estacoes')"> Estações Ideais</a></li>
+            <li><a href="#" onclick="mostrarCategoria('solo')"> Tipos de Solo</a></li>
+            <li><a href="#" onclick="mostrarCategoria('como_plantar')"> Como Plantar</a></li>
+            <li><a href="#" onclick="mostrarCategoria('vasos')"> Vasos e Recipientes</a></li>
+            <li><a href="#" onclick="mostrarCategoria('cuidados')"> Cuidados Específicos</a></li>
+            <li><a href="#" onclick="mostrarCategoria('pragas')"> Pragas e Doenças</a></li>
+            <li><a href="#" onclick="mostrarCategoria('iluminacao')"> Iluminação Ideal</a></li>
+            <li><a href="#" onclick="mostrarCategoria('rega')"> Rega Correta</a></li>
+            <li><a href="#" onclick="mostrarCategoria('adubacao')"> Adubação e Nutrientes</a></li>
+            <li><a href="#" onclick="mostrarCategoria('interno')"> Plantas Internas</a></li>
+            <li><a href="#" onclick="mostrarCategoria('externo')"> Plantas Externas</a></li>
+            <li><a href="#" onclick="mostrarCategoria('ornamental')"> Plantas Ornamentais</a></li>
+            <li><a href="#" onclick="mostrarCategoria('medicinal')"> Plantas Medicinais</a></li>
+            <li><a href="#" onclick="mostrarCategoria('propagacao')"> Propagação e Replantio</a></li>
+            <li><a href="#" onclick="mostrarCategoria('pets')"> Seguras para Pets</a></li>
+        </ul>
+    </nav>
+
+    <section id="conteudo">
+        <h2>Selecione uma categoria acima</h2>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
