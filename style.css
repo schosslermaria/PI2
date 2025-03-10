@@ -1,103 +1,120 @@
-/* 🌿 Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
-    background: #DAD7C1;  /* Bege claro */
-    color: #3F4823;  /* Verde escuro acinzentado */
-    text-align: center;
+/* styles.css */
+
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    transition: 0.3s;
+    box-sizing: border-box;
 }
 
-.modo-tema {
-    text-align: right;
-    padding: 10px;
-}
-
-#toggle-tema {
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    background: #B86F52;  /* Marrom avermelhado */
-    color: white;
-}
-
-header {
-    background: #79863C;  /* Verde musgo */
-    color: white;
-    padding: 20px;
-}
-
-nav {
-    background: #A4AD6C;  /* Verde oliva claro */
-    padding: 10px;
-}
-
-nav input {
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 10px;
-    border: 1px solid #79863C;  /* Verde musgo */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 5px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    background: #6B5B3D;  /* Marrom terra */
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-#conteudo {
-    padding: 20px;
-}
-
-.catalogo {
+body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f8ea, #d9ead3); /* Fundo suave */
+    font-family: 'Georgia', serif;
 }
 
-.planta {
-    background: #E6D3C0;  /* Bege terroso */
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 15px;
-    width: 250px;
-    transition: transform 0.3s;
-}
-
-.planta img {
+/* Container de login */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
     width: 100%;
+    max-width: 400px;
+    border: 2px solid #b7b7a4;
+}
+
+/* Formulário */
+.login-form h2 {
+    text-align: center;
+    color: #6b705c;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    font-size: 1.8em;
+}
+
+/* Inputs */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 40px 12px 10px;
+    border: 2px solid #d3a588;
     border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    background: #fdfaf6;
 }
 
-.planta:hover {
-    transform: scale(1.05);
+.input-container .icon {
+    display: inline-block; 
+  width: 5px;           
+  height: 5px;          
+  overflow: hidden;   
+  }    
+
+.input-container .icon img{
+    width: 100%;            /* Faz a imagem se ajustar à largura do span */
+  height: 100%;           /* Faz a imagem se ajustar à altura do span */
+  object-fit: cover; 
 }
 
-/* 🌙 Modo Escuro */
-.dark-mode {
-    background: #3F3B2A;  /* Marrom escuro acinzentado */
-    color: white;
+/* Opções */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #6b705c;
 }
 
-.dark-mode header, .dark-mode nav {
-    background: #574D33;  /* Marrom escuro */
+.options a {
+    color: #b5838d;
+    text-decoration: none;
 }
 
-.dark-mode .planta {
-    background: #6B5B3D;  /* Marrom terra */
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6b705c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #a98467;
+}
+
+/* Link de registro */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6b705c;
+}
+
+.register-link a {
+    color: #b5838d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }

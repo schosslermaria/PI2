@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Completo de Cultivo de Plantas</title>
+    <title>Login - Guia de Cultivo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>login</h2>
 
-    <header>
-        <h1>Guia Completo de Cultivo de Plantas</h1>
-        <p>Aprenda a cultivar e cuidar das suas plantas favoritas!</p>
-    </header>
+            <div class="input-container">
+                <input type="email" placeholder="Email" required>
+                <span class="icon">
+                    <img src="img/email.png">
+                </span>
+            </div>
 
-    <div class="modo-tema">
-        <button id="toggle-tema">Modo Claro/Escuro</button>
+            <div class="input-container">
+                <div>
+                    <div> <input type="password" placeholder="Senha" required>
+                        <span class="icon">
+                    </div>
+                        <div>
+                            <img src="img/padlock.png">
+                        </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Lembrar-me
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit">login</button>
+
+            <p class="register-link">
+                Você não tem uma conta? <a href="#">Cadastre-se!</a>
+            </p>
+        </form>
     </div>
-
-    <nav>
-        <input type="text" id="busca" placeholder="🔍 Pesquisar planta..." onkeyup="buscarPlanta()">
-        <ul>
-            <li><a href="#" onclick="mostrarCategoria('tempo')"> Tempo de Crescimento</a></li>
-            <li><a href="#" onclick="mostrarCategoria('estacoes')"> Estações Ideais</a></li>
-            <li><a href="#" onclick="mostrarCategoria('solo')"> Tipos de Solo</a></li>
-            <li><a href="#" onclick="mostrarCategoria('como_plantar')"> Como Plantar</a></li>
-            <li><a href="#" onclick="mostrarCategoria('vasos')"> Vasos e Recipientes</a></li>
-            <li><a href="#" onclick="mostrarCategoria('cuidados')"> Cuidados Específicos</a></li>
-            <li><a href="#" onclick="mostrarCategoria('pragas')"> Pragas e Doenças</a></li>
-            <li><a href="#" onclick="mostrarCategoria('iluminacao')"> Iluminação Ideal</a></li>
-            <li><a href="#" onclick="mostrarCategoria('rega')"> Rega Correta</a></li>
-            <li><a href="#" onclick="mostrarCategoria('adubacao')"> Adubação e Nutrientes</a></li>
-            <li><a href="#" onclick="mostrarCategoria('interno')"> Plantas Internas</a></li>
-            <li><a href="#" onclick="mostrarCategoria('externo')"> Plantas Externas</a></li>
-            <li><a href="#" onclick="mostrarCategoria('ornamental')"> Plantas Ornamentais</a></li>
-            <li><a href="#" onclick="mostrarCategoria('medicinal')"> Plantas Medicinais</a></li>
-            <li><a href="#" onclick="mostrarCategoria('propagacao')"> Propagação e Replantio</a></li>
-            <li><a href="#" onclick="mostrarCategoria('pets')"> Seguras para Pets</a></li>
-        </ul>
-    </nav>
-
-    <section id="conteudo">
-        <h2>Selecione uma categoria acima</h2>
-    </section>
-
-    <script src="script.js"></script>
-
 </body>
+
 </html>
