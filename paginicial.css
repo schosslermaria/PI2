@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(120, 30%, 90%);
+    color: hsl(212, 21%, 14%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+
+.categories, .extra-categories {
+    padding: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    background-color: hsl(228, 12%, 48%);
+    color: hsl(0, 0%, 100%);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1 1 calc(50% - 10px);
+    font-weight: bold;
+}
+
+.plant-card {
+    background: hsl(120, 30%, 96%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Fraunces', serif;
+}
+
+.plant-card img {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.plant-card h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+.plant-card p {
+    font-size: 14px;
+    color: hsl(212, 21%, 14%);
+}
+
+.plant-card .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid hsl(30, 38%, 85%);
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom-nav .active {
+    text-decoration: underline;
+}
+
