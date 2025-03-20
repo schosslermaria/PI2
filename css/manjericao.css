@@ -1,0 +1,171 @@
+/* 🌿 Configuração geral */
+body {
+    background-color: #C0D4C2; /* Verde pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* 📌 Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* 📌 Cartão */
+.card {
+    background-color: #F5F5F5;
+    padding: 30px;
+    width: 80vw;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 🌿 Títulos */
+.plant-name {
+    font-size: 32px;
+    font-family: 'Sacramento', cursive;
+    color: #4C7031;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: #8B8B8B;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* 🖼 Imagem */
+.plant-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.plant-image img {
+    width: 120px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* 📌 Informações */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 14px;
+}
+
+.info h3 {
+    color: #4C7031;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info p {
+    color: #666;
+    margin: 0;
+    text-align: right;
+}
+
+/* 📌 Descrição final */
+.overview {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.overview h3 {
+    font-size: 16px;
+    color: #4C7031;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.overview p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 📌 Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 90vw;
+        padding: 20px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info p {
+        text-align: left;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    .plant-name {
+        font-size: 28px;
+    }
+
+    .plant-image img {
+        width: 100px;
+    }
+
+    .info h3,
+    .info p,
+    .overview h3,
+    .overview p {
+        font-size: 13px;
+    }
+}
+
+.navegacao {
+    position: fixed; /* Fixa no final da tela */
+    bottom: 0; /* Alinha no fundo */
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #f7e8e7;
+    border-radius: 20px 20px 0 0;
+    display: flex; /* Alinha os ícones lado a lado */
+    justify-content: space-around; /* Distribui os ícones igualmente */
+    padding: 10px 0; /* Espaçamento interno */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+.navegacao img {
+    width: 30px; /* Ajuste do tamanho dos ícones */
+    height: 30px;
+    cursor: pointer; /* Indica que são clicáveis */
+    transition: transform 0.2s; /* Efeito ao passar o mouse */
+}
+
+.navegacao img:hover {
+    transform: scale(1.2); /* Aumenta um pouco ao passar o mouse */
+}

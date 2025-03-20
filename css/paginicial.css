@@ -1,0 +1,25 @@
+#header {
+    height: 7vh;    
+    width: 100vw;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#imagemhead {
+    height: 76vh;    
+    width: 100%;
+    background-image: url(/img/Imagem\ do\ WhatsApp\ de\ 2025-03-13\ à\(s\)\ 11.23.28_efcbc081.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+body{
+    margin-top: 7vh;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: black;
+}
